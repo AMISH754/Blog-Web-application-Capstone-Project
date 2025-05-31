@@ -1,0 +1,98 @@
+<%- include("header.ejs") %>
+
+
+
+<section class="heroes" id="gradient-background">
+      <div class="container col-xxl-8 px-4 py-5">
+         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+             <div class="col-10 col-sm-8 col-lg-6"> 
+                <img src="./pictures/noteBook.jpg" class="d-block mx-lg-auto img-fluid img-rad heroes-img" alt="Blog Image" width="700" height="500" loading="lazy">
+             </div> 
+             <div class="col-lg-6 animation"> 
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Blog with Us.</h1> 
+            <p class="lead">Join a thriving community dedicated to progress and innovation. We offer a platform where collaboration flourishes, knowledge expands, and your aspirations find the fertile ground they need to blossom.</p>
+             <div class="d-grid flex-button gap-2 d-md-flex justify-content-md-start"> 
+                <button type="button" class="btn btn-dark btn-lg px-4 me-md-2"><a href="/login"  class="nav-link px-2 text-white">Join us</a></button>                 
+                 </div> </div> </div> </div>
+        </section>
+
+
+        <section class="Features back-color">
+            <div class="container px-4 py-5" >
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" id="features-content"> 
+            <div class="col d-flex align-items-start animation"> 
+            <div class="feature-icon" > 
+            <img src="./svg/eye-fill.svg" alt="eye-icon" /> </div> 
+            <div class="features-des"> <h3 class="fs-2 text-body-emphasis">Get seen</h3> 
+            <p>Set your blog apart from the rest with professional design templates and intuitive, drag-and-drop customization.</p> 
+            </div> </div> 
+
+            <div class="col d-flex align-items-start animation"> 
+            <div class="feature-icon" > 
+             <img src="./svg/search.svg" alt="seach-icon"/></div> 
+            <div class="features-des"> <h3 class="fs-2 text-body-emphasis">Get found</h3> 
+            <p>Grow your audience and generate new business with powerful SEO, newsletter, lead capture, and social sharing tools.</p> 
+             </div> </div> 
+
+            <div class="col d-flex align-items-start animation"> 
+            <div class="feature-icon" > 
+            <img src="./svg/credit-card.svg" alt="credit-card-icon" /> </div> 
+            <div class="features-des" > <h3 class="fs-2 text-body-emphasis">Get paid</h3> 
+            <p>Give your readers a range of ways to support your work with subscriptions, ads, downloads, donations, gated content, and more.</p> 
+             </div> </div> 
+
+            <div class="col d-flex align-items-start animation" > 
+            <div class="feature-icon" > 
+            <img src="./svg/plug.svg" alt="plug-icon">   </div> 
+            <div class="features-des"> <h3 class="fs-2 text-body-emphasis">Go further</h3> 
+            <p>Never outgrow your blog thanks to over 50,000 plugins, themes, and easy-to-set-up integrations with the tools you already use.</p> 
+            </div> </div> </div> </div>        
+         </section>
+
+
+        <section class="Feature-2 back-color">
+           <div class="container col-xl-10 col-xxl-8 px-4 py-5"> 
+           <div class="row align-items-center g-lg-5 py-5"> 
+           <div class="col-lg-7 text-center text-lg-start animation"> 
+           <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">You’re in control</h1> 
+           <p class="col-lg-10 fs-4">Whatever you’re publishing. Whoever your audience is. WordPress.com makes designing, editing, and sharing your work as simple as drag, drop, and click.</p> 
+           <div class="d-grid  d-md-block ">
+           <button class="btn btn-dark button-font" href="#your blog"  type="button"><a href="/login"  class="nav-link px-2 text-white">Start your blog</a></button>
+          
+           </div>
+           </div> 
+           </div> </div>
+        </section>
+
+
+        <section class="carousel back-color">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner container">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="./pictures/tabpic.jpg" class="d-block w-100" alt="tabpic-image">      
+    </div>
+    <div class="carousel-item " data-bs-interval="2000">
+      <img src="./pictures/notes.jpg" class="d-block w-100" alt="notes-image">
+      
+    </div>
+    <div class="carousel-item ">
+      <img src="./pictures/newblog.jpg" class="d-block w-100" alt="blogging-image">
+    
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+<%- include("footer.ejs") %>

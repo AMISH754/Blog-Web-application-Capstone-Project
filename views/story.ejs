@@ -1,0 +1,24 @@
+<%- include("header.ejs") %> 
+
+
+
+<section id="story " class="back-color">
+<div class="story-height">
+<div class="summary  animation" >
+<%if(locals.story_tile || locals.story_body && story_title.trim() !== "" && story_body.trim() !== "" ){%>
+<h1 ><%= story_title %></h1>
+<p ><%= story_body    %> </p>
+<button type="button" class="btn btn-dark btn-lg px-4 me-md-2"><a href="/write"  class="nav-link px-2 text-white">Edit</a></button> 
+
+<%}else{%>
+<h1>Go and first write your story</h1>
+
+
+<%}%>
+
+</div>
+</div>
+</section>
+
+
+<%- include("footer.ejs") %>

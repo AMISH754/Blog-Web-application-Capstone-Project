@@ -1,0 +1,30 @@
+<%- include("header.ejs") %>
+<section class="write back-color  " id="write-gradient-background">
+<div class="animation">
+<h1 class="texth1">Write Blog here!</h1>
+<%if(locals.story_tile || locals.story_body){%>
+
+    <form action="/story" method="POST" class="write-blog">
+     <textarea name="title" class="write-input write-input-height"  placeholder="Title" id="a"><%= story_title    %></textarea>
+    <textarea name="body-text" class="text-area-input" rows="5" cols="15" placeholder="Body" ><%= story_body    %></textarea> 
+    <!-- <button type="button" class="btn btn-dark btn-lg px-4 me-md-2"> <a href="/story"  class="nav-link px-2 text-white">Save</a></button> -->
+  
+
+     <input type="submit" name="Save" value="Save">
+</form>
+  
+<%}else{%>
+
+<form action="/story" method="POST" class="write-blog">
+    <input type="text" name="title" class="write-input"   placeholder="Title">
+    <textarea name="body-text" class="text-area-input" rows="5" cols="15" placeholder="Body" id="a"></textarea>
+    <input type="submit"  name="SUBMIT">
+   
+</form>  
+
+
+<%}%>    
+</div>
+</section>
+
+<%- include("footer.ejs") %>

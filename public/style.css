@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+h2{
+    font-family: "Ancizar Serif", serif;
+}
+
+h1{
+    font-family: "Ancizar Serif", serif;
+}
+p{
+     font-family: "Ancizar Sans", sans-serif;
+}
+navlink
+{
+     font-family: "Ancizar Sans", sans-serif;
+}
+button{
+     font-family: "Ancizar Sans", sans-serif;
+}
+.navbar{
+    display: block;
+    --bs-navbar-padding-y:0;
+}
+.blogger{
+   margin-top: 1rem;
+   color: #FE7743;
+}
+.home{
+    margin-left:  1rem;
+}
+.blog-img{
+    height:40px;
+}
+.img-rad{
+    border-radius: 1rem;
+    
+}
+.animation{
+ text-align: center;
+    animation: slideFromLeft 1s ease   forwards;
+    
+    opacity: 0;
+
+}
+
+@keyframes slideFromLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+#gradient-background{
+    background-image: linear-gradient(1.5322421324332344e+26deg,rgba(39, 63, 79, 1) 0%, rgba(239, 238, 234, 1) 51%, rgba(254, 119, 67, 1) 73%, rgba(254, 119, 67, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    background-size: 200% 100%;
+    animation: gradient-animation 18s ease infinite  alternate-reverse;
+
+}
+/*linear-gradient(18deg,rgba(239, 238, 234, 1) 10%, rgba(254, 119, 67, 1) 50%)     linear-gradient(90deg,rgba(182, 113, 227, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(69, 252, 243, 1) 100%);*/
+@keyframes gradient-animation {
+    0%{
+        background-position: 0% 50%;
+    
+    }
+      50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+a:hover {
+  font-size: 18px;
+}
+.back-color{
+    background-color:#EFEEEA;
+}
+.feature-icon{
+    margin-top: 0.19rem;
+    margin-right:1rem;
+}
+.features-des{
+    text-align: left;
+}
+
+.button-font{
+    font-size:1.2rem;
+}
+.carousel-inner{
+     width: 700px;
+     padding-top:  3rem;
+     
+}
+.carousel{
+    padding-bottom: 5rem;
+}
+.footer1{
+    padding-top: 2rem;
+     background-color:#212529;
+     padding-bottom:2rem;
+}
+.heroes-img{
+    animation:slideFromRight 2s ease forwards;
+}
+@keyframes slideFromRight {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.text{
+    display:block;
+    text-align: center;
+    padding-bottom:3rem;
+}
+.texth1{
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.text p{
+    width: 300px; 
+   
+    font-size: 1.2rem;
+    margin:auto;
+}
+.membership{
+    padding-bottom:3rem;
+}
+form{
+    margin-top:50px;
+}
+.write>h1{
+    text-align: center;
+    color:black;
+}
+.write-blog{
+    text-align:center;
+}
+.write-input{
+ font-size:2rem;
+  font-family: "Ancizar Serif", serif;
+ width:80%;
+ font-family: "Ancizar Serif", serif;
+ border:1px solid black;
+ padding:auto;
+ margin-bottom:2rem;
+ border-radius:5px;
+  background-color:#EFEEEA;
+  resize:none;
+}
+.text-area-input {
+   display:block;
+    font-size:1.2rem;
+    width:80%;
+   height: 350px;
+   line-height: 125%;
+  font-family: "Ancizar Sans", sans-serif;
+   resize: vertical;
+   margin:auto;
+   margin-bottom:2rem;
+   border:1px solid black;
+   border-radius:5px;
+    background-color:#EFEEEA;
+
+}
+
+[type="submit"] {
+   
+  width: 10%;
+  color:white;
+  font-size:2rem;
+  margin-bottom:5rem;
+  border-radius:5px;
+  background-color:#212529;
+  font-family: "Ancizar Sans", sans-serif;
+  border:none;
+}
+ .write-input-height{
+    height:50px;
+ }
+#write-gradient-background{
+    background-image: linear-gradient(90deg,rgba(237, 237, 237, 1) 5%, rgba(78, 111, 138, 1) 48%, rgba(230, 108, 32, 1) 65%);;
+    background-size: 200% 100%;
+    animation: gradient-animation2 18s ease infinite  alternate;
+
+}
+@keyframes gradient-animation2 {
+    0%{
+        background-position: 0% 50%;
+    
+    }
+      50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+.summary {
+display:block;
+    text-align: center;
+    padding-bottom:3rem;
+}
+.summary h1{
+   padding-top: 3rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.summary p{
+ width: 1000px; 
+    font-size: 1.2rem;
+    margin:auto;
+    padding-bottom:1rem;
+}
+.about-image{
+    display: block;
+  margin: auto;
+  width: 15%;
+  border-radius:50%;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+.login-size{
+    display: block;
+    margin:auto;
+    width:40%;
+    height:40%;
+    
+}
+
+.login-form{
+    border-radius:10px;
+}
+
+.login-blogger h2{
+    padding-top:3rem;
+    color:#FE7743;
+
+}
+h2>img{
+    margin-top:1rem;
+
+
+}
+#login-gradient{
+   background-image: linear-gradient(to right, #efeeea, #b9c0b8, #82948f, #4e696e, #273f4f);
+    background-size: 200% 100%;
+    animation: gradient-animation3 12s ease infinite  alternate-reverse;
+
+}
+@keyframes gradient-animation3 {
+    0%{
+        background-position: 0% 50%;
+    
+    }
+      50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.story-height{
+    height:100vh;
+}
